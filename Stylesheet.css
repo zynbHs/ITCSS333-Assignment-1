@@ -38,7 +38,31 @@ body {
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
+  
   }
+  @media(max-width:600px){
+
+    nav ul{
+      display: flexbox;
+      flex-wrap: wrap;
+      width: 100%;
+      
+   
+  } }
+
+.nav-toggle{
+  display:none;
+  cursor: pointer;
+}
+.nav-toggle span{
+  display:block;
+  width: 20px;
+  height: 2px;
+  
+}
+
+
+
   .about-us {
     background-image: url('KindergartenClassStockPhoto.jpg');
    
@@ -142,6 +166,12 @@ body {
     font-size: 30px;
     font-weight: bolder;
     text-align: center;
+  }
+  #schedule{
+   width: 100%;
+   border-collapse: collapse;
+
+    
   }
   #schedule h2{
     font-family: Arial, Helvetica, sans-serif;
@@ -330,23 +360,21 @@ body {
 }
 
 
-table {
+table{
   border-collapse: collapse;
-  width: 100%;
+  width: auto;
+  
   
 }
-@media(max-width:600px){
 
-  /* #schedule{
-    display: flex;
-    flex-grow: 1;
-  } */
-}
  
 th, td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
+
+  
+
 }
  
 th {
@@ -356,6 +384,18 @@ th {
 td {
   background-color: #5e0648; /* White background */
 }
+@media(max-width:600px){
+
+  #schedule {
+    font-size: 5px;
+
+  }
+  #schedule th, td {
+    padding: 4px;
+  }
+ 
+}
+
 .slideshow-photos img{
   object-fit: contain;
   margin:0 auto;
